@@ -22,14 +22,14 @@ function App() {
 
   return (
   <div>
+    <BeerCard />
+    <NavBar />
     <Routes>
       <Route path='/' element={<div></div>}/>
-      <Route path='/Catalog' element={<div></div>}/>
-      <Route path='/BreweryFinder' element={<div></div>}/>
+      <Route path='/Catalog' element={<Fetching />}/>
+      <Route path='/BreweryFinder' element={<div>Brewey Finder coming soon!</div>}/>
+      <Route path='/About' element={<div>About Us Page</div>}/>
     </Routes>
-  <BeerCard />
-  <NavBar />
-  <Fetching /> 
   </div>
   )
 }

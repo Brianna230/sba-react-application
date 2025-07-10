@@ -1,6 +1,7 @@
 import App from "../App"
 
 
+
 function BeerCard() {
 
   return (
@@ -8,7 +9,7 @@ function BeerCard() {
         <h1>BeerTopia</h1>
         <p>"Explore, Discover, and Savor the world of beer"</p>
     </div>
- 
+  
   )
 }
 
