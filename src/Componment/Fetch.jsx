@@ -24,7 +24,7 @@ useEffect(()=>{
   return (
   <div className="list-of-beers">
     <h2>List of Beers</h2>
-    {data.map((beer)=> <p key={beer.id}>{beer.name},{beer.image && <img src={beer.image}/>}</p>)}
+    {data.map((beer)=> <p key={beer.id}>{beer.name},{beer.image && <img src={beer.image} className="beer-image"/>}</p>)}
 
  
   </div>
