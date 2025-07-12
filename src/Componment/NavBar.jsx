@@ -4,7 +4,7 @@ import { useCart } from "./ShopCart"
 
 
 function NavBar() {
-const {cart} = useCart()
+const {cartItems} = useCart()
   return (
   <>
     <ul className="nav-links">
@@ -18,7 +18,7 @@ const {cart} = useCart()
             <Link to ="/About">About</Link>
          </li>
          <li>
-          <Link to ="/Cart">Add to Cart</Link>
+          <Link to ="/Cart">Add to Cart ({cartItems.length})</Link>
          </li>
         
     </ul>
