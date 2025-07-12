@@ -16,6 +16,9 @@ function NavBar() {
         <li>
             <Link to ="/About">About</Link>
          </li>
+         <li>
+          <Link to ="/Cart">Add to Cart</Link>
+         </li>
         
     </ul>
   </>
