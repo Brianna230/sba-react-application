@@ -2,7 +2,7 @@ import React from 'react'
 import {useCart} from './ShopCart'
 
 function Cart(){
- const { cartItems} = useCart()
+ const { cartItems , removeFromCart} = useCart()
     return(
         <div>
             <h2>Your Cart</h2>
@@ -11,10 +11,10 @@ function Cart(){
             ): (
                 <ul>
                     {cartItems.map(item =>(
-                        <li key={item.id}>
+                        <p key={item.id}>
                             {item.name} - {item.price} 
-                        
-                        </li>
+                            <button onClick={()=> removeFromCart(item.id)}>Remove</button>
+                        </p>
                     ))}
                 </ul>
             )}
