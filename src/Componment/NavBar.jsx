@@ -1,9 +1,10 @@
 import React from "react"
 import {Link} from 'react-router-dom'
+import { useCart } from "./ShopCart"
+
 
 function NavBar() {
-
-
+const {cart} = useCart()
   return (
   <>
     <ul className="nav-links">

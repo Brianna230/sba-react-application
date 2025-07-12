@@ -2,7 +2,6 @@ import React from 'react'
 import {useCart} from './ShopCart'
 
 function Cart(){
-    const{cartItems, removeFromCart} = useCart();
 
     return(
         <div>
@@ -10,3 +9,5 @@ function Cart(){
         </div>
     )
 }
+
+export default Cart

@@ -1,7 +1,9 @@
 import React,{useState,useEffect} from "react"
+import {useCart} from "./ShopCart"
 
 function Fetching() {
 const[data, setData] = useState([])
+const {addToCart} = useCart()
 
 useEffect(()=>{
     const fetchData = async ()=>{
@@ -19,8 +21,9 @@ useEffect(()=>{
   return (
   <div className="list-of-beers">
     <h2>🍺 List of Beers</h2>
-    {data.map((beer)=> <p key={beer.id}>{beer.name},{beer.price},{beer.image && <img src={beer.image} className="beer-image"/>}</p>)}
- 
+    {data.map((beer)=> <p key={beer.id}>{beer.name},{beer.price},{beer.image && <img src={beer.image} className="beer-image"/>}<button onClick={() =>addToCart(beer)}>Add to Cart</button></p>)}
+    
+     
  
   </div>
   )
